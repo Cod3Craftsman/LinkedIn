@@ -6,7 +6,7 @@ export const userDataContext = createContext()
 import { io } from "socket.io-client"
 
 
-export let socket = io('http://localhost:8000')
+export let socket = io('https://linkedin-06kt.onrender.com')
 function UserContext({ children }) {
   let [userData, setUserData] = useState(null)
   let { serverUrl } = useContext(authDataContext)
